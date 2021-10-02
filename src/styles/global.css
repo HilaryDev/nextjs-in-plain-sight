@@ -1,0 +1,55 @@
+@import './vendor/tachyons.css';
+
+body {
+  line-height: 1.5;
+  font-family: "segoe ui", sans-serif;
+  background-color: #111;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+
+/* Styles for even items */
+main > div:nth-child(2n) {
+  background-color: #111;
+}
+
+/* Styles for odd items */
+main > div:nth-child(2n + 1) {
+  background-color: #000;
+}
+
+
+.normal-cursor {
+  cursor: auto;
+}
+
+.circle-list {
+  list-style-type: circle;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .title-m {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .title-l {
+    font-size: 80px;
+  }
+}

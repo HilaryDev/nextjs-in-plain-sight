@@ -1,0 +1,140 @@
+/* This stylesheet applies several styles that need to be applied to
+range inputs in all browsers to override their basic appearance.
+
+Source for most of the code in this file:
+  https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+*/
+.rangeInput {
+  /* Hides the slider so that custom slider can be made */
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* Specific width is required for Firefox. */
+  width: 100%;
+
+  /* Otherwise white in Chrome */
+  background: transparent;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.rangeInput:focus {
+  /* Removes the blue border. */
+  outline: none;
+}
+
+.rangeInput::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+
+/**************************************************************************
+******* Styling the thumb (ie. the widget that you click or drag along the track)
+***************************************************************************/
+/*
+Note that while we're repeating code below, it's necessary
+as you can't comma-separate these type of selectors.
+Browsers will drop the entire selector if it doesn't understand a part of it.
+*/
+/* Special styling for WebKit/Blink */
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  margin-top: -14px;
+
+  /* Add cool effects to your sliders! */
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+}
+
+/* All the same stuff for Firefox */
+.rangeInput::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.rangeInput::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+
+/**************************************************************************
+******* Styling the Track (ie. the line that the thumb moves across)
+***************************************************************************/
+.rangeInput::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #d2c;
+  border-radius: 1.3px;
+  border: 0.2px solid #111;
+}
+
+.rangeInput:focus::-webkit-slider-runnable-track {
+  background: #d2c;
+}
+
+.rangeInput::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #d2c;
+  border-radius: 1.3px;
+  border: 0.2px solid #111;
+}
+
+.rangeInput::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.rangeInput::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #111;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.rangeInput:focus::-ms-fill-lower {
+  background: #d2c;
+}
+.rangeInput::-ms-fill-upper {
+  background: #d2c;
+  border: 0.2px solid #111;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.rangeInput:focus::-ms-fill-upper {
+  background: #d2c;
+}
