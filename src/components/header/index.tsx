@@ -22,7 +22,7 @@ export default function Header(): JSX.Element {
               white dim no-underline ph3 pv1 br4 b
               ${styles.button}
             `}
-            href="https://github.com/MaxPerdomo/nextjs-in-plain-sight"
+            href="https://github.com/HilaryDev/nextjs-in-plain-sight"
             target="_blank"
             rel="noopener noreferrer"
           >

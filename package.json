@@ -1,8 +1,7 @@
 {
   "name": "nextjs-in-plain-sight",
   "author": {
-    "name": "Max Perdomo",
-    "url": "https://github.com/MaxPerdomo"
+    "url": "https://github.com/HilaryDev"
   },
   "license": "MPL-2.0",
   "scripts": {
@@ -19,13 +18,13 @@
   },
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/MaxPerdomo/nextjs-in-plain-sight",
+  "homepage": "https://github.com/HilaryDev/nextjs-in-plain-sight",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxPerdomo/nextjs-in-plain-sight.git"
+    "url": "git+https://github.com/HilaryDev/nextjs-in-plain-sight.git"
   },
   "bugs": {
-    "url": "https://github.com/MaxPerdomo/nextjs-in-plain-sight/issues"
+    "url": "https://github.com/HilaryDev/nextjs-in-plain-sight/issues"
   },
   "dependencies": {
     "jszip": "^3.7.1",

@@ -22,11 +22,11 @@ export default function Footer(): JSX.Element {
 
         <a
           className="dim hot-pink"
-          href="https://github.com/MaxPerdomo"
+          href="https://github.com/HilaryDev"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Max Perdomo
+          HilaryDev
         </a>
       </p>
     </footer>

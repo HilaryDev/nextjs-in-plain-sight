@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
         />
         <meta name="description" content="Tool" />
 
-        <title>InPlainSight (by Max Perdomo)</title>
+        <title>InPlainSight (by HilaryDev)</title>
 
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
